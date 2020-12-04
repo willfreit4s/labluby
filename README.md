@@ -26,3 +26,8 @@ Run the following command to run startup migrations.
 ```js
 adonis migration:run
 ```
+
+# Observação
+
+A rota follower e following usando a requisição GET (show) seria para exibir quem tá seguindo tal usuário (follower) e quem ele segue (following).
+Ao fazer essa requisição apenas o id é passado e retornado, pois minha ideia era fazer uma tabela associativa entre Follower e Following e uma outra rota para ele seguir e ser seguido, afim de armazenar no BD esses usuário na tabela associativa e na requisição GET de Follower e Following eu faria uma busca nessa tabela para saber a quantidade (count) de seguidores e quantas pessoas ele segue além do retorno dos usuários (nome e foto). 
